@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusTech UTP 2026 — Expositores</title>
+  <meta name="description" content="Expositores magistrales de CampusTech UTP 2026 en Software, Redes, Ciberseguridad y Sistemas.">
+  <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo"><span class="utp-badge">UTP</span><span class="logo-text">Campus<em>Tech</em> 2026</span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="cronograma.html" class="nav-link">Cronograma</a></li>
+          <li><a href="expositores.html" class="nav-link active" aria-current="page">Expositores</a></li>
+          <li><a href="talleres.html" class="nav-link">Talleres</a></li>
+          <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="sede.html" class="nav-link">Sede y FAQ</a></li>
+        </ul>
+        <a href="registro.html" class="btn-primary">Inscríbete</a>
+      </nav>
+      </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero-banner page-hero hero--violet">
+      <nav class="breadcrumb" aria-label="Ruta"><a href="index.html">Inicio</a><span>/</span><span aria-current="page">Expositores</span></nav>
+      <h1 class="page-title">Expositores <span>magistrales</span></h1>
+      <p class="tagline">Profesionales de empresas tecnológicas, consultoras y comunidades que comparten casos reales de su trabajo.</p>
+      <img class="hero-art" src="assets/img/microfono.svg" alt="" width="320" height="280">
+    </section>
+
+    <!-- ========== CATÁLOGO ========== -->
+    <section>
+      <div class="section-head">
+        <div>
+          <span class="section-eyebrow">Catálogo</span>
+          <h2 id="speakers-count">9 expositores</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar expositores" style="margin-bottom:0"
+             data-filter-target="#speakers" data-count="#speakers-count" data-singular="expositor" data-plural="expositores">
+          <button class="btn-filter active" aria-pressed="true" data-filter="todos">Todos</button>
+          <button class="btn-filter" aria-pressed="false" data-filter="software">Software</button>
+          <button class="btn-filter" aria-pressed="false" data-filter="redes">Redes</button>
+          <button class="btn-filter" aria-pressed="false" data-filter="seguridad">Ciberseguridad</button>
+          <button class="btn-filter" aria-pressed="false" data-filter="sistemas">Sistemas</button>
+        </div>
+      </div>
+
+      <div class="speakers-grid" id="speakers">
+        <article class="speaker-card" data-track="sistemas" data-bio="Lidera el equipo de arquitectura cloud de NubeAndina, donde ha migrado más de 40 cargas críticas de banca y retail. Es egresada de Ingeniería de Sistemas y mentora en programas de mujeres en tecnología.">
+          <img class="speaker-photo" src="assets/img/expositores/lucia-paredes.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge sistemas">Sistemas</span>
+            <h3>Lucía Paredes</h3>
+            <p class="speaker-role">Cloud Architect · NubeAndina</p>
+            <p class="speaker-topic">Migraciones multi-cloud sin downtime.</p>
+            <button class="btn-card" data-open-bio>Ver biografía</button>
+          </div>
+        </article>
+        <article class="speaker-card" data-track="seguridad" data-bio="Especialista en seguridad ofensiva con certificaciones OSCP y CRTO. Coordina ejercicios de red team para entidades financieras y dicta talleres de hacking ético.">
+          <img class="speaker-photo" src="assets/img/expositores/diego-ramirez.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge seguridad">Ciberseguridad</span>
+            <h3>Diego Ramírez</h3>
+            <p class="speaker-role">Red Team Lead · CiberLab</p>
+            <p class="speaker-topic">Anatomía de un ataque a la cadena de suministro.</p>
+            <button class="btn-card" data-open-bio>Ver biografía</button>
+          </div>
+        </article>
+        <article class="speaker-card" data-track="redes" data-bio="Diseña y automatiza redes de campus y sucursales para operadores regionales. Instructora certificada en enrutamiento y conmutación.">
+          <img class="speaker-photo" src="assets/img/expositores/valeria-chavez.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge redes">Redes</span>
+            <h3>Valeria Chávez</h3>
+            <p class="speaker-role">Network Engineer · RedSur</p>
+            <p class="speaker-topic">Automatización de redes con Python y Ansible.</p>
+            <button class="btn-card" data-open-bio>Ver biografía</button>
+          </div>
+        </article>
+        <article class="speaker-card" data-track="software" data-bio="Construye plataformas de pagos usadas por miles de comercios. Mantiene librerías open source de validación de datos y escribe sobre diseño de sistemas.">
+          <img class="speaker-photo" src="assets/img/expositores/martin-torres.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge software">Software</span>
+            <h3>Martín Torres</h3>
+            <p class="speaker-role">Staff Engineer · Kernel.pe</p>
+            <p class="speaker-topic">Diseño de APIs que sobreviven a su segundo año.</p>
+            <button class="btn-card" data-open-bio>Ver biografía</button>
+          </div>
+        </article>
+        <article class="speaker-card" data-track="seguridad" data-bio="Dirige la estrategia de seguridad de la información en DataInca. Ha implementado marcos ISO 27001 y NIST en empresas medianas del país.">
+          <img class="speaker-photo" src="assets/img/expositores/camila-rojas.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge seguridad">Ciberseguridad</span>
+            <h3>Camila Rojas</h3>
+            <p class="speaker-role">CISO · DataInca</p>
+            <p class="speaker-topic">Gobierno de seguridad para equipos pequeños.</p>
+            <button class="btn-card" data-open-bio>Ver biografía</button>
+          </div>
+        </article>
+        <article class="speaker-card" data-track="software" data-bio="Lidera el desarrollo móvil de una app con más de dos millones de usuarios. Organiza la comunidad DevPerú en Lima.">
+          <img class="speaker-photo" src="assets/img/expositores/andres-salazar.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge software">Software</span>
+            <h3>Andrés Salazar</h3>
+            <p class="speaker-role">Tech Lead Mobile · DevPerú</p>
+            <p class="speaker-topic">Rendimiento en apps móviles a escala.</p>
+            <button class="btn-card" data-open-bio>Ver biografía</button>
+          </div>
+        </article>
+        <article class="speaker-card" data-track="redes" data-bio="Trabaja en despliegues de redes privadas 5G para minería y logística. Investigador asociado en telecomunicaciones.">
+          <img class="speaker-photo" src="assets/img/expositores/jorge-huaman.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge redes">Redes</span>
+            <h3>Jorge Huamán</h3>
+            <p class="speaker-role">Arquitecto 5G · RedSur</p>
+            <p class="speaker-topic">Redes 5G privadas para la industria.</p>
+            <button class="btn-card" data-open-bio>Ver biografía</button>
+          </div>
+        </article>
+        <article class="speaker-card" data-track="sistemas" data-bio="Responsable de la confiabilidad de servicios críticos. Promueve prácticas de SRE y post-mortems sin culpables.">
+          <img class="speaker-photo" src="assets/img/expositores/rosa-medina.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge sistemas">Sistemas</span>
+            <h3>Rosa Medina</h3>
+            <p class="speaker-role">SRE Manager · NubeAndina</p>
+            <p class="speaker-topic">Observabilidad para equipos pequeños.</p>
+            <button class="btn-card" data-open-bio>Ver biografía</button>
+          </div>
+        </article>
+        <article class="speaker-card" data-track="software" data-bio="Automatiza pipelines de entrega continua para equipos de producto. Egresada UTP y docente invitada de Ingeniería de Software.">
+          <img class="speaker-photo" src="assets/img/expositores/paola-vega.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge software">Software</span>
+            <h3>Paola Vega</h3>
+            <p class="speaker-role">DevOps Engineer · Kernel.pe</p>
+            <p class="speaker-topic">CI/CD con GitHub Actions de cero a producción.</p>
+            <button class="btn-card" data-open-bio>Ver biografía</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== CONVOCATORIA ========== -->
+    <section>
+      <span class="section-eyebrow">Convocatoria</span>
+      <h2>¿Quieres exponer en 2027?</h2>
+      <p class="section-subtitle">Recibimos propuestas de charlas y talleres de egresados, docentes y profesionales de la industria.</p>
+      <div class="split">
+        <ul class="check-list">
+          <li>Propuesta de 45 minutos (charla) o 2 horas (taller práctico).</li>
+          <li>Resumen de máximo 300 palabras y público objetivo.</li>
+          <li>Experiencia comprobable en el tema propuesto.</li>
+          <li>Evaluación por el comité académico de la Facultad de Ingeniería.</li>
+        </ul>
+        <div class="info-card"><span class="label">Fecha límite</span><h3>15 de junio de 2027</h3><p>Envía tu propuesta a campustech@utp.edu.pe con el asunto "Convocatoria expositores".</p><a href="sede.html" class="btn-card" style="justify-self:start">Contactar al comité</a></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== MODAL: BIOGRAFÍA ========== -->
+  <div class="modal-overlay" id="bio-modal" aria-hidden="true">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close-btn" aria-label="Cerrar">✕</button>
+      <span class="badge" data-modal="badge"></span>
+      <h2 id="modal-title" data-modal="name"></h2>
+      <p class="speaker-role" data-modal="role"></p>
+      <p data-modal="bio"></p>
+      <p class="speaker-topic"><strong>Sesión:</strong> <span data-modal="topic"></span></p>
+      <div class="form-actions" style="justify-content:flex-start">
+        <a href="cronograma.html" class="btn-primary">Ver en el cronograma</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo"><span class="utp-badge">UTP</span><span class="logo-text">Campus<em>Tech</em> 2026</span></a>
+        <p>Congreso Anual de Tecnología, Cloud, Ciberseguridad, Redes y Software de la Universidad Tecnológica del Perú.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Congreso</h4>
+        <ul>
+          <li><a href="cronograma.html">Cronograma</a></li>
+          <li><a href="expositores.html">Expositores</a></li>
+          <li><a href="talleres.html">Talleres</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Participa</h4>
+        <ul>
+          <li><a href="registro.html">Inscripción</a></li>
+          <li><a href="sede.html">Preguntas frecuentes</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:campustech@utp.edu.pe">campustech@utp.edu.pe</a></li>
+          <li><a href="sede.html">Campus Lima Centro</a></li>
+          <li><a href="sede.html">Av. Petit Thouars 116</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Universidad Tecnológica del Perú</span>
+      <span>Proyecto académico · Ingeniería</span>
+    </div>
+  </footer>
+
+</body>
+</html>

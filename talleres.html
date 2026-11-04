@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusTech UTP 2026 — Talleres</title>
+  <meta name="description" content="Talleres prácticos en laboratorio de CampusTech UTP 2026, con cupos limitados por track.">
+  <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo"><span class="utp-badge">UTP</span><span class="logo-text">Campus<em>Tech</em> 2026</span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="cronograma.html" class="nav-link">Cronograma</a></li>
+          <li><a href="expositores.html" class="nav-link">Expositores</a></li>
+          <li><a href="talleres.html" class="nav-link active" aria-current="page">Talleres</a></li>
+          <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="sede.html" class="nav-link">Sede y FAQ</a></li>
+        </ul>
+        <a href="registro.html" class="btn-primary">Inscríbete</a>
+      </nav>
+      </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero-banner page-hero hero--orange">
+      <nav class="breadcrumb" aria-label="Ruta"><a href="index.html">Inicio</a><span>/</span><span aria-current="page">Talleres</span></nav>
+      <span class="live-pill"><span class="live-dot"></span>Cupos limitados · 30 por taller</span>
+      <h1 class="page-title">Talleres <span>prácticos</span> en laboratorio</h1>
+      <p class="tagline">Sesiones de dos horas con equipos configurados. Incluidos en el pase Completo (2 talleres) y Profesional (ilimitados).</p>
+      <img class="hero-art" src="assets/img/taller.svg" alt="" width="320" height="280">
+    </section>
+
+    <!-- ========== CATÁLOGO ========== -->
+    <section>
+      <div class="section-head">
+        <div>
+          <span class="section-eyebrow">Catálogo de talleres</span>
+          <h2 id="workshops-count">8 talleres disponibles</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar talleres" style="margin-bottom:0"
+             data-filter-target="#workshops" data-count="#workshops-count" data-singular="taller disponible" data-plural="talleres disponibles">
+          <button class="btn-filter active" aria-pressed="true" data-filter="todos">Todos</button>
+          <button class="btn-filter" aria-pressed="false" data-filter="software">Software</button>
+          <button class="btn-filter" aria-pressed="false" data-filter="redes">Redes</button>
+          <button class="btn-filter" aria-pressed="false" data-filter="seguridad">Ciberseguridad</button>
+          <button class="btn-filter" aria-pressed="false" data-filter="sistemas">Sistemas</button>
+        </div>
+      </div>
+
+      <!-- Cupos: 30 por taller. "Últimos cupos" y barra roja cuando quedan 5 o menos. -->
+      <div class="workshops-grid" id="workshops">
+        <article class="workshop-card" data-track="software">
+          <div class="workshop-top">
+            <span class="badge software">Software</span>
+            <span class="badge-urgent">Últimos cupos</span>
+          </div>
+          <h3>APIs con TypeScript y testing</h3>
+          <p>Diseña una API REST tipada con validación de datos y pruebas automatizadas.</p>
+          <div class="workshop-meta">
+            <span><b>Día</b>Mar 14</span>
+            <span><b>Hora</b>14:30</span>
+            <span><b>Sala</b>Lab 1</span>
+            <span><b>Nivel</b>Intermedio</span>
+          </div>
+          <div class="workshop-foot">
+            <div class="capacity">
+              <span>27 de 30 cupos tomados</span>
+              <div class="capacity-bar"><div class="capacity-fill is-low" style="width: 90%"></div></div>
+            </div>
+            <a href="registro.html" class="btn-card">Reservar</a>
+          </div>
+        </article>
+
+        <article class="workshop-card" data-track="software">
+          <div class="workshop-top">
+            <span class="badge software">Software</span>
+          </div>
+          <h3>CI/CD con GitHub Actions</h3>
+          <p>Configura un pipeline de integración y despliegue continuo para un proyecto real.</p>
+          <div class="workshop-meta">
+            <span><b>Día</b>Jue 16</span>
+            <span><b>Hora</b>10:30</span>
+            <span><b>Sala</b>Lab 1</span>
+            <span><b>Nivel</b>Intermedio</span>
+          </div>
+          <div class="workshop-foot">
+            <div class="capacity">
+              <span>19 de 30 cupos tomados</span>
+              <div class="capacity-bar"><div class="capacity-fill" style="width: 63%"></div></div>
+            </div>
+            <a href="registro.html" class="btn-card">Reservar</a>
+          </div>
+        </article>
+
+        <article class="workshop-card" data-track="seguridad">
+          <div class="workshop-top">
+            <span class="badge seguridad">Ciberseguridad</span>
+            <span class="badge-urgent">Últimos cupos</span>
+          </div>
+          <h3>Pentesting web con OWASP Top 10</h3>
+          <p>Explota y corrige vulnerabilidades comunes en una aplicación de laboratorio.</p>
+          <div class="workshop-meta">
+            <span><b>Día</b>Mié 15</span>
+            <span><b>Hora</b>10:30</span>
+            <span><b>Sala</b>Lab 2</span>
+            <span><b>Nivel</b>Intermedio</span>
+          </div>
+          <div class="workshop-foot">
+            <div class="capacity">
+              <span>29 de 30 cupos tomados</span>
+              <div class="capacity-bar"><div class="capacity-fill is-low" style="width: 97%"></div></div>
+            </div>
+            <a href="registro.html" class="btn-card">Reservar</a>
+          </div>
+        </article>
+
+        <article class="workshop-card" data-track="seguridad">
+          <div class="workshop-top">
+            <span class="badge seguridad">Ciberseguridad</span>
+          </div>
+          <h3>Análisis forense de memoria</h3>
+          <p>Recupera evidencia de un incidente a partir de volcados de memoria RAM.</p>
+          <div class="workshop-meta">
+            <span><b>Día</b>Jue 16</span>
+            <span><b>Hora</b>14:30</span>
+            <span><b>Sala</b>Lab 2</span>
+            <span><b>Nivel</b>Avanzado</span>
+          </div>
+          <div class="workshop-foot">
+            <div class="capacity">
+              <span>12 de 30 cupos tomados</span>
+              <div class="capacity-bar"><div class="capacity-fill" style="width: 40%"></div></div>
+            </div>
+            <a href="registro.html" class="btn-card">Reservar</a>
+          </div>
+        </article>
+
+        <article class="workshop-card" data-track="redes">
+          <div class="workshop-top">
+            <span class="badge redes">Redes</span>
+          </div>
+          <h3>Enrutamiento con Packet Tracer</h3>
+          <p>Construye una topología con OSPF, VLANs y listas de control de acceso.</p>
+          <div class="workshop-meta">
+            <span><b>Día</b>Mié 15</span>
+            <span><b>Hora</b>14:30</span>
+            <span><b>Sala</b>Lab 3</span>
+            <span><b>Nivel</b>Básico</span>
+          </div>
+          <div class="workshop-foot">
+            <div class="capacity">
+              <span>22 de 30 cupos tomados</span>
+              <div class="capacity-bar"><div class="capacity-fill" style="width: 73%"></div></div>
+            </div>
+            <a href="registro.html" class="btn-card">Reservar</a>
+          </div>
+        </article>
+
+        <article class="workshop-card" data-track="redes">
+          <div class="workshop-top">
+            <span class="badge redes">Redes</span>
+          </div>
+          <h3>Automatización de redes con Ansible</h3>
+          <p>Gestiona configuraciones de switches y routers como código.</p>
+          <div class="workshop-meta">
+            <span><b>Día</b>Mar 14</span>
+            <span><b>Hora</b>11:00</span>
+            <span><b>Sala</b>Lab 3</span>
+            <span><b>Nivel</b>Intermedio</span>
+          </div>
+          <div class="workshop-foot">
+            <div class="capacity">
+              <span>16 de 30 cupos tomados</span>
+              <div class="capacity-bar"><div class="capacity-fill" style="width: 53%"></div></div>
+            </div>
+            <a href="registro.html" class="btn-card">Reservar</a>
+          </div>
+        </article>
+
+        <article class="workshop-card" data-track="sistemas">
+          <div class="workshop-top">
+            <span class="badge sistemas">Sistemas</span>
+            <span class="badge-urgent">Últimos cupos</span>
+          </div>
+          <h3>Despliegue en la nube con contenedores</h3>
+          <p>Empaqueta una aplicación en Docker y despliégala en un servicio gestionado.</p>
+          <div class="workshop-meta">
+            <span><b>Día</b>Mar 14</span>
+            <span><b>Hora</b>16:30</span>
+            <span><b>Sala</b>Lab 1</span>
+            <span><b>Nivel</b>Básico</span>
+          </div>
+          <div class="workshop-foot">
+            <div class="capacity">
+              <span>25 de 30 cupos tomados</span>
+              <div class="capacity-bar"><div class="capacity-fill is-low" style="width: 83%"></div></div>
+            </div>
+            <a href="registro.html" class="btn-card">Reservar</a>
+          </div>
+        </article>
+
+        <article class="workshop-card" data-track="sistemas">
+          <div class="workshop-top">
+            <span class="badge sistemas">Sistemas</span>
+          </div>
+          <h3>Dashboards de datos con SQL</h3>
+          <p>Modela datos de ventas y construye un tablero de indicadores.</p>
+          <div class="workshop-meta">
+            <span><b>Día</b>Jue 16</span>
+            <span><b>Hora</b>10:30</span>
+            <span><b>Sala</b>Lab 3</span>
+            <span><b>Nivel</b>Básico</span>
+          </div>
+          <div class="workshop-foot">
+            <div class="capacity">
+              <span>9 de 30 cupos tomados</span>
+              <div class="capacity-bar"><div class="capacity-fill" style="width: 30%"></div></div>
+            </div>
+            <a href="registro.html" class="btn-card">Reservar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== REQUISITOS ========== -->
+    <section>
+      <span class="section-eyebrow">Antes de llegar</span>
+      <h2>Requisitos para los talleres</h2>
+      <div class="split">
+        <ul class="check-list">
+          <li>Llegar 10 minutos antes; el aforo se libera al iniciar la sesión.</li>
+          <li>Traer DNI o carné universitario para la acreditación en el laboratorio.</li>
+          <li>Los talleres de nivel intermedio asumen conocimientos básicos de terminal y Git.</li>
+          <li>Puedes usar tu laptop personal; los laboratorios cuentan con equipos de respaldo.</li>
+          <li>Los materiales y repositorios se comparten por correo al finalizar.</li>
+        </ul>
+        <div class="info-card"><span class="label">¿Sin cupo?</span><h3>Lista de espera</h3><p>Si un taller se llena, regístrate igual: liberamos los cupos no confirmados 24 horas antes del evento.</p><a href="registro.html" class="btn-card" style="justify-self:start">Unirme a la lista</a></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo"><span class="utp-badge">UTP</span><span class="logo-text">Campus<em>Tech</em> 2026</span></a>
+        <p>Congreso Anual de Tecnología, Cloud, Ciberseguridad, Redes y Software de la Universidad Tecnológica del Perú.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Congreso</h4>
+        <ul>
+          <li><a href="cronograma.html">Cronograma</a></li>
+          <li><a href="expositores.html">Expositores</a></li>
+          <li><a href="talleres.html">Talleres</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Participa</h4>
+        <ul>
+          <li><a href="registro.html">Inscripción</a></li>
+          <li><a href="sede.html">Preguntas frecuentes</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:campustech@utp.edu.pe">campustech@utp.edu.pe</a></li>
+          <li><a href="sede.html">Campus Lima Centro</a></li>
+          <li><a href="sede.html">Av. Petit Thouars 116</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Universidad Tecnológica del Perú</span>
+      <span>Proyecto académico · Ingeniería</span>
+    </div>
+  </footer>
+
+</body>
+</html>
