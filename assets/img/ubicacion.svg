@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 280" aria-hidden="true">
+  <g stroke="#1b1340" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="160" cy="250" rx="110" ry="18" fill="#1b1340" opacity="0.15" stroke="none"/>
+    <!-- Edificio -->
+    <rect x="64" y="120" width="120" height="128" rx="8" fill="#fff"/>
+    <rect x="96" y="200" width="40" height="48" fill="#fde047"/>
+    <g stroke="none">
+      <rect x="80" y="136" width="22" height="18" rx="3" fill="#67e8f9"/>
+      <rect x="112" y="136" width="22" height="18" rx="3" fill="#67e8f9"/>
+      <rect x="144" y="136" width="22" height="18" rx="3" fill="#67e8f9"/>
+      <rect x="80" y="166" width="22" height="18" rx="3" fill="#67e8f9"/>
+      <rect x="144" y="166" width="22" height="18" rx="3" fill="#67e8f9"/>
+    </g>
+    <rect x="104" y="98" width="44" height="22" rx="4" fill="#e5173f"/>
+    <!-- Pin -->
+    <path d="M232 34 C268 34 290 60 290 92 C290 132 232 186 232 186 C232 186 174 132 174 92 C174 60 196 34 232 34 Z" fill="#e5173f"/>
+    <circle cx="232" cy="90" r="20" fill="#fff"/>
+    <path d="M30 76 l8 -14 l8 14 z" fill="#a3e635"/>
+    <circle cx="292" cy="230" r="11" fill="#a78bfa"/>
+  </g>
+</svg>

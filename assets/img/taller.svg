@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 280" aria-hidden="true">
+  <g stroke="#1b1340" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Engranaje -->
+    <path d="M226 44 l10 -14 l14 8 l-4 16 a46 46 0 0 1 14 14 l16 -4 l8 14 l-14 10 a46 46 0 0 1 0 20 l14 10 l-8 14 l-16 -4 a46 46 0 0 1 -14 14 l4 16 l-14 8 l-10 -14 a46 46 0 0 1 -20 0 l-10 14 l-14 -8 l4 -16 a46 46 0 0 1 -14 -14 l-16 4 l-8 -14 l14 -10 a46 46 0 0 1 0 -20 l-14 -10 l8 -14 l16 4 a46 46 0 0 1 14 -14 l-4 -16 l14 -8 l10 14 a46 46 0 0 1 20 0 z" fill="#fde047"/>
+    <circle cx="216" cy="88" r="18" fill="#fff"/>
+    <!-- Laptop -->
+    <rect x="30" y="124" width="190" height="118" rx="14" fill="#1b1340"/>
+    <rect x="44" y="138" width="162" height="90" rx="6" fill="#2a1f5c" stroke="none"/>
+    <g stroke="none">
+      <rect x="58" y="152" width="60" height="10" rx="5" fill="#a3e635"/>
+      <rect x="66" y="172" width="96" height="10" rx="5" fill="#67e8f9"/>
+      <rect x="66" y="192" width="54" height="10" rx="5" fill="#ec4899"/>
+      <rect x="128" y="192" width="40" height="10" rx="5" fill="#fde047"/>
+    </g>
+    <path d="M14 242 H236 L248 260 C250 264 246 268 240 268 H10 C4 268 0 264 2 260 Z" fill="#fdba74"/>
+    <!-- Llave -->
+    <path d="M286 180 l-50 50 a16 16 0 1 1 -14 -14 l50 -50 a26 26 0 0 1 34 -32 l-18 18 l4 14 l14 4 l18 -18 a26 26 0 0 1 -32 34 z" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 480" role="img" aria-labelledby="t">
+  <title id="t">Laptop con código rodeada de íconos de nube, red y seguridad</title>
+  <g stroke="#1b1340" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Mancha de fondo -->
+    <path d="M86 210 C70 110 170 40 290 52 C420 64 520 140 500 260 C482 372 380 440 260 428 C140 416 100 320 86 210 Z" fill="#fff7ed" opacity="0.18" stroke="none"/>
+
+    <!-- Laptop -->
+    <rect x="128" y="132" width="304" height="196" rx="18" fill="#1b1340"/>
+    <rect x="146" y="150" width="268" height="160" rx="8" fill="#2a1f5c" stroke="none"/>
+    <g stroke="none">
+      <rect x="164" y="170" width="70" height="12" rx="6" fill="#ec4899"/>
+      <rect x="242" y="170" width="110" height="12" rx="6" fill="#fde047"/>
+      <rect x="184" y="194" width="96" height="12" rx="6" fill="#67e8f9"/>
+      <rect x="288" y="194" width="52" height="12" rx="6" fill="#a78bfa"/>
+      <rect x="184" y="218" width="140" height="12" rx="6" fill="#a3e635"/>
+      <rect x="204" y="242" width="80" height="12" rx="6" fill="#fb923c"/>
+      <rect x="292" y="242" width="60" height="12" rx="6" fill="#67e8f9"/>
+      <rect x="164" y="266" width="44" height="12" rx="6" fill="#ec4899"/>
+      <rect x="216" y="266" width="12" height="18" rx="2" fill="#fde047"/>
+    </g>
+    <path d="M96 328 H464 L486 360 C488 366 484 372 476 372 H84 C76 372 72 366 74 360 Z" fill="#c4b5fd"/>
+    <path d="M246 340 H314" fill="none"/>
+
+    <!-- Nube (Sistemas) -->
+    <path d="M60 128 C40 128 32 100 52 92 C50 66 84 56 98 76 C108 52 148 58 146 88 C166 88 170 128 146 128 Z" fill="#fcd34d"/>
+    <path d="M86 104 h34 M86 116 h22" fill="none"/>
+
+    <!-- Escudo (Ciberseguridad) -->
+    <path d="M462 54 L510 70 V112 C510 146 488 164 462 176 C436 164 414 146 414 112 V70 Z" fill="#fb7185"/>
+    <rect x="446" y="106" width="32" height="26" rx="5" fill="#fff"/>
+    <path d="M452 106 V96 C452 82 472 82 472 96 V106" fill="none"/>
+
+    <!-- Red (Redes) -->
+    <path d="M58 430 L110 392 L170 432 M110 392 L104 336" fill="none"/>
+    <circle cx="58" cy="430" r="16" fill="#67e8f9"/>
+    <circle cx="110" cy="392" r="20" fill="#06b6d4"/>
+    <circle cx="170" cy="432" r="14" fill="#67e8f9"/>
+
+    <!-- Llaves de código (Software) -->
+    <rect x="438" y="372" width="92" height="64" rx="16" fill="#a78bfa"/>
+    <path d="M466 390 l-14 14 l14 14 M502 390 l14 14 l-14 14 M490 386 l-12 36" fill="none" stroke="#fff"/>
+
+    <!-- Decoración -->
+    <path d="M300 18 l9 20 l22 3 l-16 15 l4 22 l-19 -11 l-19 11 l4 -22 l-16 -15 l22 -3 z" fill="#fde047"/>
+    <circle cx="530" cy="250" r="12" fill="#a3e635"/>
+    <circle cx="30" cy="250" r="9" fill="#ec4899"/>
+    <path d="M226 452 q14 -16 28 0 t28 0 t28 0" fill="none" stroke="#fde047"/>
+    <path d="M370 96 l8 -16 l8 16 z" fill="#a3e635"/>
+  </g>
+</svg>

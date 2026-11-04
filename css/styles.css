@@ -1,0 +1,286 @@
+/* ========================================================
+   CampusTech Nova 2026 — Unidad 1: Estilos Básicos de HTML5
+   ======================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0c0f17;
+  color: #e2e8f0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1, h2, h3, h4 {
+  color: #ffffff;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+h1 span, h2 span {
+  color: #c8102e;
+}
+
+p {
+  margin-bottom: 14px;
+  color: #94a3b8;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.live-pill {
+  display: inline-block;
+  background-color: #1e293b;
+  color: #38bdf8;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  border: 1px solid #334155;
+}
+
+.live-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #38bdf8;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.nova-badge {
+  background-color: #c8102e;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.site-header {
+  background-color: #141926;
+  border-bottom: 2px solid #232d42;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.nav-link {
+  color: #94a3b8;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  color: #38bdf8;
+}
+
+.main-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-banner {
+  background-color: #141926;
+  border: 1px solid #232d42;
+  border-radius: 8px;
+  padding: 28px;
+  margin-bottom: 28px;
+}
+
+.hero-actions {
+  margin: 18px 0;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #c8102e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.hero-meta div {
+  margin-bottom: 6px;
+  color: #94a3b8;
+}
+
+.hero-meta strong {
+  color: #ffffff;
+  margin-right: 6px;
+}
+
+.tracks-grid, .speakers-grid, .workshops-grid, .stats-grid {
+  margin: 20px 0;
+}
+
+.track-card, .speaker-card, .workshop-card, .stat, .mission-card, .info-card {
+  background-color: #141926;
+  border: 1px solid #232d42;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  border-radius: 3px;
+  background-color: #1e293b;
+  color: #38bdf8;
+  border: 1px solid #334155;
+  margin-bottom: 8px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  background-color: #141926;
+}
+
+.custom-table caption {
+  text-align: left;
+  font-weight: bold;
+  color: #38bdf8;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.custom-table th, .custom-table td {
+  border: 1px solid #334155;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.custom-table th {
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #0f131d;
+}
+
+.form-card {
+  background-color: #141926;
+  border: 1px solid #232d42;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 20px 0;
+}
+
+fieldset {
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #38bdf8;
+  padding: 0 8px;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.required {
+  color: #c8102e;
+  margin-left: 4px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+  width: 100%;
+  max-width: 550px;
+  padding: 8px 12px;
+  background-color: #0c0f17;
+  color: #ffffff;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.form-hint {
+  display: block;
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+video, audio {
+  max-width: 100%;
+  margin: 12px 0;
+  display: block;
+}
+
+.site-footer {
+  background-color: #0f131d;
+  border-top: 1px solid #232d42;
+  padding: 24px 16px;
+  margin-top: 40px;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.85rem;
+}
