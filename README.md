@@ -1,2 +1,2 @@
-# Sesión 11 — Codigo-Final
-Inicio de JavaScript: vinculación con defer, variables, tipos, evento scroll y consola.
+# Sesión 12 — Codigo-Final
+Arreglos de datos, algoritmos de búsqueda y diálogos interactivos (prompt, confirm, alert).
