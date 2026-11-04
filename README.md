@@ -1,2 +1,2 @@
-# Sesión 04 — Codigo-Final
-Tablas estructuradas (caption, thead, tbody, th, td) y catálogos en HTML puro.
+# Sesión 05 — Codigo-Final (APF1)
+Hito de evaluación: 100% de la arquitectura HTML completada con estilos básicos.
