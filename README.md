@@ -1,2 +1,2 @@
-# Sesión 02 — Codigo-Final
-Estructura semántica HTML5 (header, nav, main, footer) y navegación multi-página.
+# Sesión 03 — Codigo-Final
+Formulario de registro con validación nativa HTML5 y multimedia (video y podcast).

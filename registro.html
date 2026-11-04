@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusTech UTP 2026 — Registro</title>
+  <meta name="description" content="Inscríbete a CampusTech UTP 2026 y elige tu pase: Estudiante, Completo o Profesional.">
+  <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo"><span class="utp-badge">UTP</span><span class="logo-text">Campus<em>Tech</em> 2026</span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="cronograma.html" class="nav-link">Cronograma</a></li>
+          <li><a href="expositores.html" class="nav-link">Expositores</a></li>
+          <li><a href="talleres.html" class="nav-link">Talleres</a></li>
+          <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="sede.html" class="nav-link">Sede y FAQ</a></li>
+        </ul>
+        <a href="registro.html" class="btn-primary" aria-current="page">Inscríbete</a>
+      </nav>
+      </div>
+  </header>
+
+  <main class="main-content">
+    <section class="form-page">
+
+      <!-- ========== INTRO ========== -->
+      <div class="form-intro">
+        <nav class="breadcrumb" aria-label="Ruta" style="justify-content:center;margin-bottom:var(--sp-5)"><a href="index.html">Inicio</a><span>/</span><span aria-current="page">Registro</span></nav>
+        <span class="live-pill" style="margin-bottom:var(--sp-5)"><span class="live-dot"></span>Preventa hasta el 30 de septiembre</span>
+        <img class="form-art" src="assets/img/ticket.svg" alt="" width="320" height="180">
+        <h1 class="page-title" style="margin-inline:auto">Asegura tu <span>lugar</span></h1>
+        <p class="tagline" style="margin:var(--sp-4) auto 0">Completa el formulario. Recibirás un correo con tu código QR de acceso y las instrucciones de pago.</p>
+      </div>
+
+      <!-- ========== FORMULARIO ========== -->
+      <form class="form-card" id="form-registro" novalidate>
+        <fieldset>
+          <legend>1 · Datos personales</legend>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo<span class="required">*</span></label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Ana Quispe Flores" required aria-describedby="error-nombre">
+              <span class="error-message" id="error-nombre"></span>
+            </div>
+            <div class="form-group">
+              <label for="dni">DNI<span class="required">*</span></label>
+              <input id="dni" name="dni" type="text" inputmode="numeric" maxlength="8" placeholder="12345678" required aria-describedby="error-dni">
+              <span class="error-message" id="error-dni"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="correo">Correo electrónico<span class="required">*</span></label>
+              <input id="correo" name="correo" type="email" autocomplete="email" placeholder="u20231234@utp.edu.pe" required aria-describedby="error-correo hint-correo">
+              <span class="error-message" id="error-correo"></span>
+              <span class="form-hint" id="hint-correo">Usa tu correo UTP para acceder al precio de estudiante.</span>
+            </div>
+            <div class="form-group">
+              <label for="tel">Celular</label>
+              <input id="tel" name="tel" type="tel" autocomplete="tel" placeholder="987 654 321">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>2 · Perfil académico</legend>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="perfil">Perfil</label>
+              <select id="perfil" name="perfil">
+                <option>Estudiante UTP</option>
+                <option>Estudiante de otra universidad</option>
+                <option>Docente</option>
+                <option>Profesional</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="carrera">Carrera o área</label>
+              <select id="carrera" name="carrera">
+                <option>Ingeniería de Software</option>
+                <option>Ingeniería de Sistemas e Informática</option>
+                <option>Ingeniería de Redes y Comunicaciones</option>
+                <option>Ingeniería de Seguridad y Auditoría Informática</option>
+                <option>Otra</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="track">Track de interés principal</label>
+            <select id="track" name="track">
+              <option>Software</option>
+              <option>Redes</option>
+              <option>Ciberseguridad</option>
+              <option>Sistemas</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>3 · Tipo de pase</legend>
+          <div class="radio-options">
+            <label><input type="radio" name="pase" value="est">Estudiante · S/ 40</label>
+            <label><input type="radio" name="pase" value="comp" checked>Completo · S/ 90</label>
+            <label><input type="radio" name="pase" value="pro">Profesional · S/ 180</label>
+          </div>
+          <div class="form-group">
+            <label>Modalidad</label>
+            <div class="radio-options">
+              <label><input type="radio" name="modo" value="presencial" checked>Presencial</label>
+              <label><input type="radio" name="modo" value="virtual">Virtual (streaming)</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>4 · Comentarios</legend>
+          <div class="form-group">
+            <label for="msg">¿Qué esperas del congreso?</label>
+            <textarea id="msg" name="msg" maxlength="240" placeholder="Cuéntanos tus intereses o necesidades de accesibilidad"></textarea>
+            <span class="char-counter">0/240</span>
+          </div>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="novedades" checked><span>Deseo recibir novedades del congreso por correo</span></label>
+            <label><input type="checkbox" id="terminos" name="terminos" required aria-describedby="error-terminos"><span>Acepto la <a href="sede.html">política de privacidad</a> y el uso de mis datos para la acreditación<span class="required" style="color:var(--coral)">*</span></span></label>
+            <span class="error-message" id="error-terminos"></span>
+          </div>
+        </fieldset>
+
+        <div class="form-feedback" id="form-feedback" role="status" aria-live="polite"></div>
+        <div class="form-actions">
+          <span class="form-hint" style="margin-right:auto">Total a pagar: <strong id="total">S/ 90</strong></span>
+          <button type="reset" class="btn-secondary">Limpiar</button>
+          <button type="submit" class="btn-primary">Confirmar inscripción</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo"><span class="utp-badge">UTP</span><span class="logo-text">Campus<em>Tech</em> 2026</span></a>
+        <p>Congreso Anual de Tecnología, Cloud, Ciberseguridad, Redes y Software de la Universidad Tecnológica del Perú.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Congreso</h4>
+        <ul>
+          <li><a href="cronograma.html">Cronograma</a></li>
+          <li><a href="expositores.html">Expositores</a></li>
+          <li><a href="talleres.html">Talleres</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Participa</h4>
+        <ul>
+          <li><a href="registro.html">Inscripción</a></li>
+          <li><a href="sede.html">Preguntas frecuentes</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:campustech@utp.edu.pe">campustech@utp.edu.pe</a></li>
+          <li><a href="sede.html">Campus Lima Centro</a></li>
+          <li><a href="sede.html">Av. Petit Thouars 116</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Universidad Tecnológica del Perú</span>
+      <span>Proyecto académico · Ingeniería</span>
+    </div>
+  </footer>
+
+</body>
+</html>
