@@ -1,2 +1,2 @@
-# Sesión 12 — Codigo-Final
-Arreglos de datos, algoritmos de búsqueda y diálogos interactivos (prompt, confirm, alert).
+# Sesión 13 — Codigo-Final
+Manipulación dinámica del DOM: filtrado en vivo de conferencias y pestañas accesibles.
