@@ -1,0 +1,271 @@
+/* =========================================================
+   CampusTech UTP 2026 — movil.css
+   Ajustes del tema festival para celulares (< 768px).
+
+   Se enlaza con el atributo media, así el navegador solo
+   aplica este archivo en pantallas pequeñas:
+   <link rel="stylesheet" href="css/movil.css" media="(max-width: 767.98px)">
+
+   Por eso aquí NO hace falta escribir @media: todo el
+   archivo ya es "móvil". Va después de festival.css para
+   ganar a sus reglas con la misma especificidad.
+   ========================================================= */
+
+/* ---------- 1. Sombras más cortas (el margen de pantalla es de 16px) ---------- */
+:root {
+  --pop-sm: 2px 2px 0 var(--ink);
+  --pop:    4px 4px 0 var(--ink);
+  --pop-lg: 5px 5px 0 var(--ink);
+}
+
+/* Las etiquetas de sección nunca se estiran a todo el ancho */
+.section-eyebrow { width: fit-content; }
+
+h2 { font-size: 1.875rem; }
+.section-subtitle { font-size: 1rem; margin-bottom: var(--sp-8); }
+
+/* ---------- 2. Hero de portada: más corto ---------- */
+.hero-banner:not(.page-hero) {
+  /* Sin los círculos decorativos que quedaban detrás del título */
+  background: linear-gradient(160deg, #6d28d9 0%, #db2777 60%, #f97316 100%);
+}
+.hero-banner {
+  gap: var(--sp-4);
+  padding: var(--sp-8) var(--sp-5);
+}
+/* Ilustración pequeña arriba, en vez de grande al final */
+.hero-banner > .hero-art {
+  order: -1;
+  width: 190px;
+  max-width: 60%;
+  margin: calc(var(--sp-2) * -1) auto calc(var(--sp-2) * -1);
+}
+.main-title { font-size: 2.625rem; }
+.page-title { font-size: 2.375rem; }
+.hero-banner .tagline { font-size: 1rem; }
+
+.live-pill {
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
+  padding-inline: var(--sp-3);
+}
+
+/* Datos clave en tres columnas compactas */
+.hero-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--sp-2);
+  margin-top: var(--sp-2);
+  padding-top: var(--sp-4);
+  font-size: 0.5625rem;
+  letter-spacing: 0.03em;
+}
+.hero-meta > div { padding: var(--sp-2); }
+.hero-meta strong { font-size: 0.9375rem; line-height: 1.2; }
+
+/* ---------- 3. Cifras ---------- */
+.stats-grid { gap: var(--sp-3); }
+.stat { padding: var(--sp-4); }
+.stat strong { font-size: 2.25rem; }
+.stat span { font-size: 0.8125rem; line-height: 1.35; }
+
+/* ---------- 4. Tracks: tarjeta horizontal (ilustración + texto) ---------- */
+.tracks-grid { gap: var(--sp-3); }
+.track-card {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  grid-template-areas:
+    "art titulo"
+    "art texto";
+  align-items: center;
+  column-gap: var(--sp-4);
+  row-gap: var(--sp-1);
+  padding: var(--sp-4);
+}
+.track-art {
+  grid-area: art;
+  width: 76px;
+  height: 64px;
+  margin: 0;
+}
+.track-card h3 { grid-area: titulo; margin: 0; font-size: 1.25rem; align-self: end; }
+.track-card p { grid-area: texto; font-size: 0.8125rem; line-height: 1.45; align-self: start; }
+.track-card .track-number {
+  top: var(--sp-2);
+  right: var(--sp-2);
+  padding: 2px 8px;
+  font-size: 0.625rem;
+  border-width: 1.5px;
+}
+.track-card:hover { transform: none; box-shadow: var(--pop); }
+
+/* ---------- 5. Expositores: tarjeta horizontal (retrato + datos) ---------- */
+.speakers-grid { gap: var(--sp-4); }
+.speaker-card { flex-direction: row; }
+.speaker-card img,
+.speaker-card .speaker-photo {
+  flex: none;
+  width: 112px;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: cover;
+  border-bottom: 0;
+  border-right: var(--border);
+}
+.speaker-body {
+  min-width: 0;
+  gap: var(--sp-1);
+  padding: var(--sp-4);
+}
+.speaker-body h3 { margin-top: var(--sp-1); font-size: 1.125rem; }
+.speaker-role { font-size: 0.8125rem; }
+.speaker-topic { font-size: 0.8125rem; padding-top: var(--sp-2); }
+.speaker-body .btn-card,
+.speaker-body > :last-child.btn-card { margin-top: var(--sp-3); height: 36px; font-size: 0.8125rem; }
+.speaker-card:hover { transform: none; box-shadow: var(--pop); }
+
+/* ---------- 6. Filtros: chips deslizables con aviso de "hay más" ---------- */
+.filters {
+  padding-block: 4px 8px;
+  -webkit-mask-image: linear-gradient(90deg, #000 82%, transparent);
+  mask-image: linear-gradient(90deg, #000 82%, transparent);
+}
+.filters .btn-filter { height: 36px; }
+
+/* ---------- 7. Cronograma: cada sesión se vuelve una tarjeta ---------- */
+/* Columnas de la tabla: 1 Hora · 2 Sesión · 3 Expositor · 4 Sala · 5 Track */
+[role="tabpanel"].table-responsive {
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+[role="tabpanel"] .custom-table { display: block; min-width: 0; }
+[role="tabpanel"] .custom-table caption { display: block; padding: 0 0 var(--sp-4); }
+/* Encabezados ocultos a la vista pero disponibles para lectores de pantalla */
+[role="tabpanel"] .custom-table thead {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+[role="tabpanel"] .custom-table tbody { display: grid; gap: var(--sp-3); }
+[role="tabpanel"] .custom-table tbody tr {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "hora  track"
+    "sesion sesion"
+    "quien sala";
+  gap: var(--sp-1) var(--sp-3);
+  padding: var(--sp-4);
+  background: #fff;
+  border: var(--border);
+  border-radius: var(--r-md);
+  box-shadow: var(--pop-sm);
+}
+[role="tabpanel"] .custom-table tbody tr > * {
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+[role="tabpanel"] .custom-table td:nth-child(1) {
+  grid-area: hora;
+  align-self: center;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--violet);
+}
+[role="tabpanel"] .custom-table td:nth-child(2) {
+  grid-area: sesion;
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ink);
+}
+[role="tabpanel"] .custom-table td:nth-child(3) { grid-area: quien; font-size: 0.8125rem; }
+[role="tabpanel"] .custom-table td:nth-child(4) {
+  grid-area: sala;
+  justify-self: end;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+[role="tabpanel"] .custom-table td:nth-child(3)::before { content: "👤 "; }
+[role="tabpanel"] .custom-table td:nth-child(4)::before { content: "📍 "; }
+[role="tabpanel"] .custom-table td:nth-child(5) { grid-area: track; justify-self: end; }
+/* Keynotes y momentos clave en amarillo */
+[role="tabpanel"] .custom-table tbody tr.highlight-row { background: #fef9c3; }
+[role="tabpanel"] .custom-table tbody tr.highlight-row > :first-child { box-shadow: none; }
+[role="tabpanel"] .custom-table tbody tr:hover > * { background: none; }
+
+/* ---------- 8. Tabla de tarifas: la columna de beneficios queda fija ---------- */
+#tarifas .custom-table { min-width: 520px; }
+#tarifas .custom-table thead th:first-child,
+#tarifas .custom-table tbody th[scope="row"] {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  min-width: 128px;
+  box-shadow: 2px 0 0 var(--ink);
+}
+#tarifas .custom-table tbody th[scope="row"] { background: #fff; }
+/* El subtítulo se desplaza con la tabla: se limita al ancho visible para que no se corte */
+#tarifas .custom-table caption { padding: var(--sp-4); }
+#tarifas .custom-table caption small { display: block; max-width: 300px; }
+#tarifas .custom-table th,
+#tarifas .custom-table td { padding: var(--sp-3); font-size: 0.8125rem; }
+
+/* ---------- 9. Talleres: datos en cuadrícula y barra junto al botón ---------- */
+.workshop-card { gap: var(--sp-3); padding: calc(var(--sp-5) + 12px) var(--sp-4) var(--sp-4); }
+.workshop-card h3 { font-size: 1.125rem; }
+.workshop-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-2);
+}
+.workshop-foot { flex-wrap: nowrap; gap: var(--sp-3); }
+.capacity { min-width: 0; }
+.workshop-foot .btn-card { flex: none; height: 38px; }
+.workshop-card:hover { transform: none; box-shadow: var(--pop); }
+
+/* ---------- 10. Banda CTA y tarjetas ---------- */
+.cta-band {
+  /* Sin círculos decorativos detrás del texto */
+  background: var(--yellow);
+  padding: var(--sp-6) var(--sp-5);
+  gap: var(--sp-5);
+}
+.cta-band h2 { font-size: 1.75rem; }
+.info-card { padding: var(--sp-5); }
+.mission-card { background: var(--cyan-50); }
+.mission-card blockquote { font-size: 1.25rem; }
+
+/* ---------- 11. Comité: dos columnas compactas ---------- */
+.team-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--sp-3);
+}
+.team-card { padding: var(--sp-4); align-content: start; }
+.team-card .avatar { width: 44px; height: 44px; margin-bottom: var(--sp-2); font-size: 0.875rem; }
+.team-card h3 { font-size: 0.9375rem; }
+.team-card p { font-size: 0.75rem; }
+
+/* ---------- 12. Formulario: el total a pagar se ve antes de los botones ---------- */
+.form-card { padding: var(--sp-6) var(--sp-4); }
+.form-actions .form-hint {
+  order: 3; /* con column-reverse, el orden mayor queda arriba */
+  margin: 0 !important; /* anula el margin-right:auto escrito en el HTML */
+  text-align: center;
+  font-size: var(--fs-sm);
+}
+.form-art { width: 200px; }
+
+/* ---------- 13. Mapa y footer ---------- */
+.map-frame { min-height: 220px; }
+.site-footer { margin-top: var(--sp-8); }

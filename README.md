@@ -1,2 +1,2 @@
-# Sesión 07 — Codigo-Final
-Micro-interacciones visuales, transiciones suaves y `@keyframes` (pulse, hover).
+# Sesión 08 — Codigo-Final
+Diseño responsivo Mobile-First con Media Queries y tablas adaptadas.
