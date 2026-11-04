@@ -1,0 +1,220 @@
+/* =========================================================
+   CampusTech UTP 2026 — animations.css
+   Micro-interacciones y keyframes (solo transform / opacity → 60 FPS)
+   ========================================================= */
+
+/* ---------- Keyframes ---------- */
+@keyframes pulse-ring {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  80%  { transform: scale(2.8); opacity: 0; }
+  100% { transform: scale(2.8); opacity: 0; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translate3d(0, 24px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes blur-in {
+  from { opacity: 0; filter: blur(12px); transform: translate3d(0, 12px, 0); }
+  to   { opacity: 1; filter: blur(0);    transform: translate3d(0, 0, 0); }
+}
+
+@keyframes orb-drift {
+  0%   { transform: translate3d(0, 0, 0) rotate(0deg) scale(1); }
+  33%  { transform: translate3d(-40px, 30px, 0) rotate(120deg) scale(1.08); }
+  66%  { transform: translate3d(20px, 60px, 0) rotate(240deg) scale(0.96); }
+  100% { transform: translate3d(0, 0, 0) rotate(360deg) scale(1); }
+}
+
+@keyframes grid-pan {
+  from { background-position: -1px -1px; }
+  to   { background-position: 55px 55px; }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+@keyframes shimmer {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(100%); }
+}
+
+@keyframes drawer-item-in {
+  from { opacity: 0; transform: translate3d(24px, 0, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%      { transform: translateX(-6px); }
+  40%      { transform: translateX(5px); }
+  60%      { transform: translateX(-3px); }
+  80%      { transform: translateX(2px); }
+}
+
+@keyframes pop-in {
+  0%   { opacity: 0; transform: scale(0.92); }
+  60%  { opacity: 1; transform: scale(1.02); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes urgent-glow {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(255,255,255,0.12) inset, 0 6px 16px -6px rgba(229,23,63,0.45); }
+  50%      { box-shadow: 0 0 0 1px rgba(255,255,255,0.2) inset, 0 6px 26px -4px rgba(229,23,63,0.85); }
+}
+
+/* ---------- Punto en vivo ---------- */
+.live-dot::after {
+  animation: pulse-ring 1.8s var(--ease-out) infinite;
+}
+
+/* ---------- Badge urgente ---------- */
+.badge-urgent {
+  animation: urgent-glow 2.4s var(--ease-in-out) infinite;
+}
+
+/* ---------- Hero: entrada escalonada ---------- */
+.hero-banner > * {
+  animation: fade-up var(--dur-4) var(--ease-out) both;
+}
+.hero-banner > :nth-child(1) { animation-delay: 60ms; }
+.hero-banner > :nth-child(2) { animation-name: blur-in; animation-duration: 900ms; animation-delay: 140ms; }
+.hero-banner > :nth-child(3) { animation-delay: 280ms; }
+.hero-banner > :nth-child(4) { animation-delay: 380ms; }
+.hero-banner > :nth-child(5) { animation-delay: 480ms; }
+
+.hero-banner::after {
+  animation: orb-drift 22s linear infinite;
+  will-change: transform;
+}
+.hero-banner::before {
+  animation: grid-pan 18s linear infinite;
+}
+
+.main-title span,
+.main-title em,
+.main-title strong {
+  background-size: 200% 100%;
+  animation: gradient-shift 8s var(--ease-in-out) infinite;
+}
+
+/* ---------- Header: entrada ---------- */
+.site-header .header-container {
+  animation: fade-up 600ms var(--ease-out) backwards;
+}
+
+/* ---------- Grillas: entrada escalonada ---------- */
+.tracks-grid > *,
+.speakers-grid > * {
+  animation: fade-up 700ms var(--ease-out) both;
+}
+.tracks-grid > :nth-child(1), .speakers-grid > :nth-child(1) { animation-delay: 80ms; }
+.tracks-grid > :nth-child(2), .speakers-grid > :nth-child(2) { animation-delay: 160ms; }
+.tracks-grid > :nth-child(3), .speakers-grid > :nth-child(3) { animation-delay: 240ms; }
+.tracks-grid > :nth-child(4), .speakers-grid > :nth-child(4) { animation-delay: 320ms; }
+.speakers-grid > :nth-child(5) { animation-delay: 400ms; }
+.speakers-grid > :nth-child(6) { animation-delay: 480ms; }
+
+/* Scroll-driven reveal donde el navegador lo soporte */
+@supports (animation-timeline: view()) {
+  .tracks-grid > *,
+  .speakers-grid > *,
+  .table-responsive,
+  .form-card,
+  .mission-card,
+  .media-grid > * {
+    animation: fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 22%;
+    animation-delay: 0ms;
+  }
+}
+
+/* Clase opcional para IntersectionObserver */
+.reveal { opacity: 0; transform: translate3d(0, 24px, 0); transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out); }
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* ---------- Barra de cupos ---------- */
+@keyframes fill-grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.capacity-fill { animation: fill-grow 1.1s var(--ease-out) 300ms both; }
+
+/* ---------- Pin del mapa ---------- */
+@keyframes float-y { 0%,100% { transform: translate(-50%, -50%); } 50% { transform: translate(-50%, calc(-50% - 6px)); } }
+.map-pin { animation: float-y 3.2s var(--ease-in-out) infinite; }
+
+/* ---------- Entrada de grillas adicionales ---------- */
+.workshops-grid > *, .team-grid > *, .contact-grid > *, .faq-list > * { animation: fade-up 700ms var(--ease-out) both; }
+.workshops-grid > :nth-child(2), .team-grid > :nth-child(2), .contact-grid > :nth-child(2), .faq-list > :nth-child(2) { animation-delay: 80ms; }
+.workshops-grid > :nth-child(3), .team-grid > :nth-child(3), .contact-grid > :nth-child(3), .faq-list > :nth-child(3) { animation-delay: 160ms; }
+.workshops-grid > :nth-child(4), .team-grid > :nth-child(4), .faq-list > :nth-child(4) { animation-delay: 240ms; }
+
+/* ---------- Filtrado de expositores ---------- */
+.speaker-card.is-filtering-in { animation: pop-in 420ms var(--ease-spring) both; }
+
+/* ---------- Drawer móvil: items en cascada ---------- */
+.main-nav.is-open li {
+  animation: drawer-item-in 460ms var(--ease-out) both;
+}
+.main-nav.is-open li:nth-child(1) { animation-delay: 80ms; }
+.main-nav.is-open li:nth-child(2) { animation-delay: 130ms; }
+.main-nav.is-open li:nth-child(3) { animation-delay: 180ms; }
+.main-nav.is-open li:nth-child(4) { animation-delay: 230ms; }
+.main-nav.is-open li:nth-child(5) { animation-delay: 280ms; }
+
+/* Hamburguesa → X (soporta clase o aria-expanded) */
+.hamburger-btn.is-active .bar:nth-child(1),
+.hamburger-btn[aria-expanded="true"] .bar:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.hamburger-btn.is-active .bar:nth-child(2),
+.hamburger-btn[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; transform: translateX(8px); }
+.hamburger-btn.is-active .bar:nth-child(3),
+.hamburger-btn[aria-expanded="true"] .bar:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ---------- Formulario ---------- */
+.form-group.is-invalid input,
+.form-group.is-invalid select,
+.form-group.is-invalid textarea,
+input.is-invalid, select.is-invalid, textarea.is-invalid {
+  animation: shake 380ms var(--ease-out);
+}
+.error-message:not(:empty),
+.form-error:not(:empty) { animation: fade-up 260ms var(--ease-out) both; }
+.form-feedback:not(:empty),
+#form-feedback:not(:empty) { animation: pop-in 420ms var(--ease-spring) both; }
+
+/* Estado de envío: shimmer dentro del botón */
+.btn-primary.is-loading {
+  pointer-events: none;
+  color: transparent;
+}
+.btn-primary.is-loading::after {
+  left: 0;
+  width: 100%;
+  transform: none;
+  background: linear-gradient(100deg, transparent 20%, rgba(255,255,255,0.4), transparent 80%);
+  animation: shimmer 1.1s linear infinite;
+  transition: none;
+}
+
+/* ---------- Tablas ---------- */
+.custom-table tbody tr {
+  transition: transform var(--dur-2) var(--ease-out);
+}
+
+/* ---------- Accesibilidad: movimiento reducido ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}

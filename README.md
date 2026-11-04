@@ -1,2 +1,2 @@
-# Sesión 06 — Codigo-Final
-Incorporación de tipografías Google Fonts, tokens CSS en `:root` y SVGs.
+# Sesión 07 — Codigo-Final
+Micro-interacciones visuales, transiciones suaves y `@keyframes` (pulse, hover).
