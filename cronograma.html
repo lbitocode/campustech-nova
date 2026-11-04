@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusTech UTP 2026 — Cronograma</title>
+  <meta name="description" content="Agenda de los tres días de CampusTech UTP 2026: horarios, salas, tracks y tarifas de los pases.">
+  <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo"><span class="utp-badge">UTP</span><span class="logo-text">Campus<em>Tech</em> 2026</span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="cronograma.html" class="nav-link active" aria-current="page">Cronograma</a></li>
+          <li><a href="expositores.html" class="nav-link">Expositores</a></li>
+          <li><a href="talleres.html" class="nav-link">Talleres</a></li>
+          <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="sede.html" class="nav-link">Sede y FAQ</a></li>
+        </ul>
+        <a href="registro.html" class="btn-primary">Inscríbete</a>
+      </nav>
+      </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero-banner page-hero hero--cyan">
+      <nav class="breadcrumb" aria-label="Ruta"><a href="index.html">Inicio</a><span>/</span><span aria-current="page">Cronograma</span></nav>
+      <h1 class="page-title">Tres días de <span>agenda académica</span></h1>
+      <p class="tagline">Del martes 14 al jueves 16 de octubre. Las sesiones se transmiten en vivo desde el Auditorio A para quienes elijan la modalidad virtual.</p>
+      <img class="hero-art" src="assets/img/calendario.svg" alt="" width="320" height="280">
+    </section>
+
+    <!-- ========== AGENDA POR DÍA ========== -->
+    <section class="table-section">
+      <span class="section-eyebrow">Agenda por día</span>
+      <h2>Horarios y salas</h2>
+      <div class="filters" role="tablist" aria-label="Día del congreso">
+        <button class="btn-filter active" role="tab" aria-selected="true" aria-controls="dia-14">Mar 14</button>
+        <button class="btn-filter" role="tab" aria-selected="false" aria-controls="dia-15">Mié 15</button>
+        <button class="btn-filter" role="tab" aria-selected="false" aria-controls="dia-16">Jue 16</button>
+      </div>
+
+      <!-- Martes 14 -->
+      <div class="table-responsive" id="dia-14" role="tabpanel">
+        <!-- En la sesión 04 se maquetarán las tablas de horarios y tarifas -->
+<!-- <table class="custom-table">
+          <caption>Martes 14 de octubre · Cloud y Sistemas<small>Horarios en hora de Lima (GMT-5)</small></caption>
+          <thead><tr><th scope="col">Hora</th><th scope="col">Sesión</th><th scope="col">Expositor</th><th scope="col">Sala</th><th scope="col">Track</th></tr></thead>
+          <tbody>
+            <tr><td>08:30</td><td>Acreditación y café de bienvenida</td><td>Comité organizador</td><td>Hall principal</td><td><span class="badge">General</span></td></tr>
+            <tr><td>09:15</td><td>Inauguración oficial</td><td>Decanato de Ingeniería</td><td>Auditorio A</td><td><span class="badge">General</span></td></tr>
+            <tr class="highlight-row"><td>09:45</td><td>Keynote: Arquitecturas cloud-native en el Perú</td><td>Lucía Paredes</td><td>Auditorio A</td><td><span class="badge sistemas">Sistemas</span></td></tr>
+            <tr><td>11:00</td><td>Zero Trust en redes universitarias</td><td>Camila Rojas</td><td>Sala 204</td><td><span class="badge seguridad">Seguridad</span></td></tr>
+            <tr><td>11:00</td><td>SD-WAN y automatización con Python</td><td>Valeria Chávez</td><td>Lab 3</td><td><span class="badge redes">Redes</span></td></tr>
+            <tr><td>14:30</td><td>Taller: APIs con TypeScript y testing</td><td>Martín Torres</td><td>Lab 1</td><td><span class="badge software">Software</span></td></tr>
+            <tr><td>16:30</td><td>Panel: Datos e IA en la empresa peruana</td><td>Invitados</td><td>Auditorio A</td><td><span class="badge sistemas">Sistemas</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Miércoles 15 -->
+      <div class="table-responsive" id="dia-15" role="tabpanel" hidden>
+        <!-- En la sesión 04 se maquetarán las tablas de horarios y tarifas -->
+<!-- <table class="custom-table">
+          <caption>Miércoles 15 de octubre · Seguridad y Redes<small>Horarios en hora de Lima (GMT-5)</small></caption>
+          <thead><tr><th scope="col">Hora</th><th scope="col">Sesión</th><th scope="col">Expositor</th><th scope="col">Sala</th><th scope="col">Track</th></tr></thead>
+          <tbody>
+            <tr class="highlight-row"><td>09:00</td><td>Keynote: Anatomía de un ataque a la cadena de suministro</td><td>Diego Ramírez</td><td>Auditorio A</td><td><span class="badge seguridad">Seguridad</span></td></tr>
+            <tr><td>10:30</td><td>Redes 5G privadas para la industria</td><td>Jorge Huamán</td><td>Sala 204</td><td><span class="badge redes">Redes</span></td></tr>
+            <tr><td>10:30</td><td>Taller: Pentesting web con OWASP Top 10</td><td>Diego Ramírez</td><td>Lab 2</td><td><span class="badge seguridad">Seguridad</span></td></tr>
+            <tr><td>12:00</td><td>Observabilidad para equipos pequeños</td><td>Rosa Medina</td><td>Sala 204</td><td><span class="badge sistemas">Sistemas</span></td></tr>
+            <tr><td>14:30</td><td>Taller: Laboratorio de enrutamiento con Packet Tracer</td><td>Valeria Chávez</td><td>Lab 3</td><td><span class="badge redes">Redes</span></td></tr>
+            <tr><td>16:00</td><td>Capture The Flag interfacultades</td><td>CiberLab</td><td>Labs 1–2</td><td><span class="badge seguridad">Seguridad</span></td></tr>
+            <tr><td>18:00</td><td>Networking y feria de empleabilidad</td><td>Empresas aliadas</td><td>Hall principal</td><td><span class="badge">General</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Jueves 16 -->
+      <div class="table-responsive" id="dia-16" role="tabpanel" hidden>
+        <!-- En la sesión 04 se maquetarán las tablas de horarios y tarifas -->
+<!-- <table class="custom-table">
+          <caption>Jueves 16 de octubre · Software y cierre<small>Horarios en hora de Lima (GMT-5)</small></caption>
+          <thead><tr><th scope="col">Hora</th><th scope="col">Sesión</th><th scope="col">Expositor</th><th scope="col">Sala</th><th scope="col">Track</th></tr></thead>
+          <tbody>
+            <tr class="highlight-row"><td>09:00</td><td>Keynote: Diseño de APIs que sobreviven a su segundo año</td><td>Martín Torres</td><td>Auditorio A</td><td><span class="badge software">Software</span></td></tr>
+            <tr><td>10:30</td><td>Rendimiento en apps móviles a escala</td><td>Andrés Salazar</td><td>Sala 204</td><td><span class="badge software">Software</span></td></tr>
+            <tr><td>10:30</td><td>Taller: CI/CD con GitHub Actions</td><td>Paola Vega</td><td>Lab 1</td><td><span class="badge software">Software</span></td></tr>
+            <tr><td>12:00</td><td>Gobierno de seguridad para equipos pequeños</td><td>Camila Rojas</td><td>Sala 204</td><td><span class="badge seguridad">Seguridad</span></td></tr>
+            <tr><td>14:30</td><td>Final del hackathon CampusTech</td><td>Jurado</td><td>Auditorio A</td><td><span class="badge software">Software</span></td></tr>
+            <tr class="highlight-row"><td>17:00</td><td>Premiación y clausura</td><td>Comité organizador</td><td>Auditorio A</td><td><span class="badge">General</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ========== SALAS ========== -->
+    <section>
+      <span class="section-eyebrow">Salas</span>
+      <h2>Dónde ocurre cada sesión</h2>
+      <p class="section-subtitle">Todas las salas están en el pabellón B del Campus Lima Centro, a menos de dos minutos entre sí.</p>
+      <div class="two-col">
+        <div class="info-card"><span class="label">Auditorio A · 450 personas</span><h3>Keynotes y paneles</h3><p>Sesiones plenarias con traducción y transmisión en vivo.</p></div>
+        <div class="info-card"><span class="label">Sala 204 · 120 personas</span><h3>Charlas técnicas</h3><p>Tracks de Ciberseguridad y Sistemas en formato de 45 minutos.</p></div>
+        <div class="info-card"><span class="label">Labs 1–3 · 30 puestos c/u</span><h3>Talleres prácticos</h3><p>Equipos con entornos preconfigurados. Requiere inscripción previa al taller.</p></div>
+        <div class="info-card"><span class="label">Hall principal</span><h3>Feria y networking</h3><p>Stands de empresas aliadas, café y zona de pósters de proyectos estudiantiles.</p></div>
+      </div>
+    </section>
+
+    <!-- ========== TARIFAS ========== -->
+    <section class="table-section" id="tarifas">
+      <span class="section-eyebrow">Pases y tarifas</span>
+      <h2>Elige tu pase</h2>
+      <div class="table-responsive">
+        <!-- En la sesión 04 se maquetarán las tablas de horarios y tarifas -->
+<!-- <table class="custom-table">
+          <caption>Comparativa de pases<small>Precios en soles, IGV incluido. Preventa válida hasta el 30 de septiembre.</small></caption>
+          <thead><tr><th scope="col">Beneficio</th><th scope="col">Estudiante</th><th scope="col" class="recommended">Completo</th><th scope="col">Profesional</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Precio preventa</th><td class="price">S/ 40</td><td class="price recommended">S/ 90</td><td class="price">S/ 180</td></tr>
+            <tr><th scope="row">Precio regular</th><td>S/ 60</td><td class="recommended">S/ 120</td><td>S/ 220</td></tr>
+            <tr><th scope="row">Charlas magistrales</th><td class="check">✓</td><td class="check recommended">✓</td><td class="check">✓</td></tr>
+            <tr><th scope="row">Talleres prácticos</th><td class="cross">—</td><td class="check recommended">2 talleres</td><td class="check">Ilimitados</td></tr>
+            <tr><th scope="row">Kit del congreso</th><td class="cross">—</td><td class="check recommended">✓</td><td class="check">✓</td></tr>
+            <tr><th scope="row">Certificado digital</th><td class="check">✓</td><td class="check recommended">✓</td><td class="check">✓</td></tr>
+            <tr><th scope="row">Acceso a grabaciones</th><td class="cross">—</td><td class="check recommended">30 días</td><td class="check">1 año</td></tr>
+            <tr><th scope="row">Cupos disponibles</th><td>120</td><td class="recommended"><span class="badge-urgent">Últimos 18</span></td><td>40</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-band">
+      <div>
+        <h2>¿Ya elegiste tu pase?</h2>
+        <p>Completa tu inscripción en menos de dos minutos y recibe la confirmación por correo.</p>
+      </div>
+      <div class="hero-actions"><a href="registro.html" class="btn-primary">Ir al registro</a></div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo"><span class="utp-badge">UTP</span><span class="logo-text">Campus<em>Tech</em> 2026</span></a>
+        <p>Congreso Anual de Tecnología, Cloud, Ciberseguridad, Redes y Software de la Universidad Tecnológica del Perú.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Congreso</h4>
+        <ul>
+          <li><a href="cronograma.html">Cronograma</a></li>
+          <li><a href="expositores.html">Expositores</a></li>
+          <li><a href="talleres.html">Talleres</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Participa</h4>
+        <ul>
+          <li><a href="registro.html">Inscripción</a></li>
+          <li><a href="sede.html">Preguntas frecuentes</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:campustech@utp.edu.pe">campustech@utp.edu.pe</a></li>
+          <li><a href="sede.html">Campus Lima Centro</a></li>
+          <li><a href="sede.html">Av. Petit Thouars 116</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Universidad Tecnológica del Perú</span>
+      <span>Proyecto académico · Ingeniería</span>
+    </div>
+  </footer>
+
+</body>
+</html>

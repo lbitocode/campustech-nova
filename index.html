@@ -3,53 +3,218 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CampusTech Nova 2026 — Inicio</title>
-  <meta name="description" content="CampusTech Nova 2026: Congreso Anual de Tecnología del Instituto Nova.">
+  <title>CampusTech UTP 2026 — Inicio</title>
+  <meta name="description" content="CampusTech UTP 2026: Congreso Anual de Tecnología de la Universidad Tecnológica del Perú. Cloud, Ciberseguridad, Redes y Software.">
   <link rel="stylesheet" href="css/styles.css">
-</head>
+  </head>
 <body>
-  <div class="container">
-    <header class="hero-banner">
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo"><span class="utp-badge">UTP</span><span class="logo-text">Campus<em>Tech</em> 2026</span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+          <li><a href="cronograma.html" class="nav-link">Cronograma</a></li>
+          <li><a href="expositores.html" class="nav-link">Expositores</a></li>
+          <li><a href="talleres.html" class="nav-link">Talleres</a></li>
+          <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="sede.html" class="nav-link">Sede y FAQ</a></li>
+        </ul>
+        <a href="registro.html" class="btn-primary">Inscríbete</a>
+      </nav>
+      </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero-banner">
       <span class="live-pill"><span class="live-dot"></span>Inscripciones abiertas · 14–16 Oct 2026</span>
-      <h1>El futuro se <span>compila</span> en el campus.</h1>
-      <p>Congreso Anual de Tecnología del Instituto Nova. Tres días de Cloud, Ciberseguridad, Redes y Software.</p>
+      <h1 class="main-title">El futuro se <span>compila</span> en el campus.</h1>
+      <p class="tagline">Congreso Anual de Tecnología de la Universidad Tecnológica del Perú. Tres días de Cloud, Ciberseguridad, Redes y Software con expositores de la industria, talleres prácticos y competencias entre facultades.</p>
       <div class="hero-actions">
-        <a href="https://www.instituto-nova.example" target="_blank" rel="noopener noreferrer" class="btn-primary">Portal Nova</a>
-        <a href="#tracks" class="btn-secondary">Ver especialidades</a>
+        <a href="registro.html" class="btn-primary">Reservar mi pase</a>
+        <a href="cronograma.html" class="btn-secondary">Ver cronograma</a>
       </div>
       <div class="hero-meta">
-        <div><strong>Fechas:</strong> 14–16 de Octubre 2026</div>
-        <div><strong>Sede:</strong> Campus Central</div>
-        <div><strong>Modalidad:</strong> Híbrido (Presencial y streaming)</div>
+        <div><strong>14–16 Oct</strong>Tres jornadas</div>
+        <div><strong>Lima Centro</strong>Campus UTP</div>
+        <div><strong>Híbrido</strong>Presencial y streaming</div>
       </div>
-    </header>
+      <img class="hero-art" src="assets/img/hero.svg" alt="" width="560" height="480">
+    </section>
 
+    <!-- ========== CIFRAS ========== -->
+    <section aria-label="Cifras del congreso">
+      <div class="stats-grid">
+        <div class="stat"><strong>24<em>+</em></strong><span>Charlas y talleres</span></div>
+        <div class="stat"><strong>18</strong><span>Expositores invitados</span></div>
+        <div class="stat"><strong>4</strong><span>Tracks de especialidad</span></div>
+        <div class="stat"><strong>1.2<em>k</em></strong><span>Asistentes esperados</span></div>
+      </div>
+    </section>
+
+    <!-- ========== TRACKS ========== -->
     <section id="tracks">
-      <h2>Cuatro tracks temáticos</h2>
-      <p>Elige tu especialidad favorita:</p>
+      <div class="section-head">
+        <div>
+          <span class="section-eyebrow">Especialidades</span>
+          <h2>Cuatro tracks, una sola comunidad</h2>
+          <p class="section-subtitle">Elige tu ruta o combina sesiones de distintas especialidades con el pase completo.</p>
+        </div>
+        <a href="talleres.html" class="btn-secondary">Ver talleres</a>
+      </div>
       <div class="tracks-grid">
-        <article class="track-card">
-          <h3>01 · Software</h3>
-          <p>Desarrollo web moderno, arquitectura limpia y testing.</p>
+        <article class="track-card software">
+          <span class="track-number">01</span>
+          <img class="track-art" src="assets/img/track-software.svg" alt="" width="200" height="140">
+          <h3>Software</h3>
+          <p>Desarrollo de software, arquitectura limpia, testing y DevOps.</p>
         </article>
-        <article class="track-card">
-          <h3>02 · Redes</h3>
-          <p>Infraestructura cloud, automatización con Python y SD-WAN.</p>
+        <article class="track-card redes">
+          <span class="track-number">02</span>
+          <img class="track-art" src="assets/img/track-redes.svg" alt="" width="200" height="140">
+          <h3>Redes</h3>
+          <p>Infraestructura, SD-WAN, 5G y automatización de redes.</p>
         </article>
-        <article class="track-card">
-          <h3>03 · Ciberseguridad</h3>
-          <p>Pentesting ético, Zero Trust y respuesta a incidentes.</p>
+        <article class="track-card seguridad">
+          <span class="track-number">03</span>
+          <img class="track-art" src="assets/img/track-seguridad.svg" alt="" width="200" height="140">
+          <h3>Ciberseguridad</h3>
+          <p>Pentesting, Zero Trust, respuesta a incidentes y forense digital.</p>
         </article>
-        <article class="track-card">
-          <h3>04 · Sistemas</h3>
-          <p>Pipelines de datos, Cloud Native y microservicios.</p>
+        <article class="track-card sistemas">
+          <span class="track-number">04</span>
+          <img class="track-art" src="assets/img/track-sistemas.svg" alt="" width="200" height="140">
+          <h3>Sistemas</h3>
+          <p>Cloud, ERP, datos y transformación digital empresarial.</p>
         </article>
       </div>
     </section>
 
-    <footer class="site-footer">
-      <p>© 2026 Instituto Nova — CampusTech 2026.</p>
-    </footer>
-  </div>
+    <!-- ========== EXPOSITORES ========== -->
+    <section>
+      <div class="section-head">
+        <div>
+          <span class="section-eyebrow">Expositores magistrales</span>
+          <h2>Quienes construyen la industria</h2>
+        </div>
+        <a href="expositores.html" class="btn-card">Ver los 9 expositores</a>
+      </div>
+      <div class="speakers-grid">
+        <article class="speaker-card">
+          <img class="speaker-photo" src="assets/img/expositores/lucia-paredes.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge sistemas">Sistemas</span>
+            <h3>Lucía Paredes</h3>
+            <p class="speaker-role">Cloud Architect · NubeAndina</p>
+            <p class="speaker-topic">Migraciones multi-cloud sin downtime.</p>
+            <a href="expositores.html" class="btn-card">Ver perfil</a>
+          </div>
+        </article>
+        <article class="speaker-card">
+          <img class="speaker-photo" src="assets/img/expositores/diego-ramirez.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge seguridad">Ciberseguridad</span>
+            <h3>Diego Ramírez</h3>
+            <p class="speaker-role">Red Team Lead · CiberLab</p>
+            <p class="speaker-topic">Anatomía de un ataque a la cadena de suministro.</p>
+            <a href="expositores.html" class="btn-card">Ver perfil</a>
+          </div>
+        </article>
+        <article class="speaker-card">
+          <img class="speaker-photo" src="assets/img/expositores/martin-torres.svg" alt="" width="400" height="340" loading="lazy">
+          <div class="speaker-body">
+            <span class="badge software">Software</span>
+            <h3>Martín Torres</h3>
+            <p class="speaker-role">Staff Engineer · Kernel.pe</p>
+            <p class="speaker-topic">Diseño de APIs que sobreviven a su segundo año.</p>
+            <a href="expositores.html" class="btn-card">Ver perfil</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== POR QUÉ ASISTIR ========== -->
+    <section>
+      <span class="section-eyebrow">Por qué asistir</span>
+      <h2>Más que un ciclo de charlas</h2>
+      <p class="section-subtitle">CampusTech reúne a estudiantes, docentes y empresas en un mismo espacio de aprendizaje aplicado.</p>
+      <div class="two-col">
+        <div class="info-card"><span class="label">01 · Aprende</span><h3>Contenido actualizado de la industria</h3><p>Sesiones dictadas por profesionales que trabajan hoy en cloud, seguridad, redes y desarrollo de software.</p></div>
+        <div class="info-card"><span class="label">02 · Practica</span><h3>Talleres con laboratorio</h3><p>Ocho talleres con cupos limitados en los laboratorios del campus, con equipos y entornos ya configurados.</p></div>
+        <div class="info-card"><span class="label">03 · Conecta</span><h3>Feria de empleabilidad</h3><p>Stands de empresas aliadas con prácticas preprofesionales y revisión de CV en vivo.</p></div>
+        <div class="info-card"><span class="label">04 · Certifica</span><h3>Certificado digital verificable</h3><p>Constancia de participación con horas académicas para quienes asistan al 80% de su track.</p></div>
+      </div>
+    </section>
+
+    <!-- ========== ALIADOS ========== -->
+    <section>
+      <span class="section-eyebrow">Aliados</span>
+      <h2>Con el respaldo de</h2>
+      <p class="section-subtitle">Empresas y comunidades que hacen posible esta edición.</p>
+      <div class="sponsors-row">
+        <div class="sponsor">NubeAndina</div>
+        <div class="sponsor">RedSur</div>
+        <div class="sponsor">Kernel.pe</div>
+        <div class="sponsor">CiberLab</div>
+        <div class="sponsor">DataInca</div>
+        <div class="sponsor">DevPerú</div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-band">
+      <div>
+        <h2>Quedan pocos pases con precio de preventa</h2>
+        <p>La preventa cierra el 30 de septiembre. Los estudiantes UTP acceden con su correo institucional.</p>
+      </div>
+      <div class="hero-actions">
+        <a href="registro.html" class="btn-primary">Inscribirme ahora</a>
+        <a href="cronograma.html#tarifas" class="btn-secondary">Ver tarifas</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo"><span class="utp-badge">UTP</span><span class="logo-text">Campus<em>Tech</em> 2026</span></a>
+        <p>Congreso Anual de Tecnología, Cloud, Ciberseguridad, Redes y Software de la Universidad Tecnológica del Perú.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Congreso</h4>
+        <ul>
+          <li><a href="cronograma.html">Cronograma</a></li>
+          <li><a href="expositores.html">Expositores</a></li>
+          <li><a href="talleres.html">Talleres</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Participa</h4>
+        <ul>
+          <li><a href="registro.html">Inscripción</a></li>
+          <li><a href="sede.html">Preguntas frecuentes</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:campustech@utp.edu.pe">campustech@utp.edu.pe</a></li>
+          <li><a href="sede.html">Campus Lima Centro</a></li>
+          <li><a href="sede.html">Av. Petit Thouars 116</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Universidad Tecnológica del Perú</span>
+      <span>Proyecto académico · Ingeniería</span>
+    </div>
+  </footer>
+
 </body>
 </html>

@@ -1,2 +1,2 @@
-# Sesión 01 — Codigo-Final
-Estructura básica HTML5, metadatos, textos, enlaces y estilos básicos con CSS.
+# Sesión 02 — Codigo-Final
+Estructura semántica HTML5 (header, nav, main, footer) y navegación multi-página.

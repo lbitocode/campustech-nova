@@ -1,5 +1,5 @@
 /* ========================================================
-   CampusTech Nova 2026 — Unidad 1: Estilos Básicos de HTML5
+   CampusTech UTP 2026 — Unidad 1: Estilos Básicos de HTML5
    ======================================================== */
 * {
   margin: 0;
@@ -59,7 +59,7 @@ a:hover {
   margin-right: 6px;
 }
 
-.nova-badge {
+.utp-badge {
   background-color: #c8102e;
   color: #ffffff;
   font-size: 0.75rem;
