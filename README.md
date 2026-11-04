@@ -1,2 +1,2 @@
-# Sesión 15 — Codigo-Final (APF3)
-Hito de evaluación: interactividad JS, manipulación del DOM, menú móvil y ventanas modales.
+# Sesión 17 — Codigo-Final
+Auditoría con Google Lighthouse, optimización técnica y ensayo del pitch técnico.
