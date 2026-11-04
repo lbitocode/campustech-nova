@@ -1,2 +1,2 @@
-# Sesión 10 — Codigo-Final (APF2)
-Hito de evaluación: 100% del diseño CSS y responsividad completados.
+# Sesión 11 — Codigo-Final
+Inicio de JavaScript: vinculación con defer, variables, tipos, evento scroll y consola.
