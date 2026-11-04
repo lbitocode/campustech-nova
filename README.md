@@ -1,2 +1,2 @@
-# Sesión 08 — Codigo-Final
-Diseño responsivo Mobile-First con Media Queries y tablas adaptadas.
+# Sesión 09 — Codigo-Final
+Maquetación avanzada con Flexbox (navbar, botones) y CSS Grid (estadísticas, ponentes, talleres).
